@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-J5-Zhp">
+                                <rect key="frame" x="112" y="63" width="97" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Espresso">
+                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressAddEspreso:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9U-MJ-3Bz"/>
+                                    <action selector="didPressMakeEspress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qo0-Aw-WvS"/>
+                                    <action selector="didPressMakeEspresso:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0s-db-BIC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-Nu-xkY">
+                                <rect key="frame" x="104" y="105" width="103" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Americano">
+                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressAmericano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tF-qq-YL3"/>
+                                    <action selector="didPressMakeAAmericano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSz-Dc-Fn1"/>
+                                    <action selector="didPressMakeAmericano:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOW-gl-eFO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-vt-7KP">
+                                <rect key="frame" x="131" y="140" width="49" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Latte">
+                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressMakeLatte:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFc-rl-P3i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2N-K8-bor">
+                                <rect key="frame" x="53" y="398" width="79" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="+ coffee">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCoffee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ens-Xq-xTP"/>
+                                    <action selector="didPressAddCoffee:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lp-ol-qJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-a6-IfK">
+                                <rect key="frame" x="55" y="464" width="58" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="+ milk">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMilk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eoh-id-06l"/>
+                                    <action selector="didPressAddMilk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wrR-Co-i6E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbv-Y9-amK">
+                                <rect key="frame" x="214" y="398" width="47" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlP-SB-RJ4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What coffee do you want?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0r-Xq-dFp">
+                                <rect key="frame" x="0.0" y="274" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0s-aO-oUQ">
+                                <rect key="frame" x="56" y="326" width="72" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="+ water">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWater:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQm-Tw-xEH"/>
+                                    <action selector="didPressAddWater:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kg0-Jh-Ts9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Americano" destination="Z1I-Nu-xkY" id="kH1-uG-jL8"/>
+                        <outlet property="Espresso" destination="OAj-J5-Zhp" id="Nfo-Su-GLF"/>
+                        <outlet property="Latte" destination="jpW-vt-7KP" id="mtt-kE-cQ2"/>
+                        <outlet property="addCoffee" destination="T2N-K8-bor" id="vDI-Hq-aiN"/>
+                        <outlet property="addCoffeee" destination="T2N-K8-bor" id="0XG-5i-MPX"/>
+                        <outlet property="addMilk" destination="dXP-a6-IfK" id="wIN-Dz-tuc"/>
+                        <outlet property="addMilkk" destination="dXP-a6-IfK" id="zi1-6p-31B"/>
+                        <outlet property="addWater" destination="u0s-aO-oUQ" id="6kZ-JL-ORa"/>
+                        <outlet property="addWaterr" destination="u0s-aO-oUQ" id="Ogz-jH-2Ci"/>
+                        <outlet property="americano" destination="Z1I-Nu-xkY" id="8NE-u0-01q"/>
+                        <outlet property="clear" destination="zbv-Y9-amK" id="mFC-DA-3yS"/>
+                        <outlet property="espresso" destination="OAj-J5-Zhp" id="z9b-ei-73R"/>
+                        <outlet property="latte" destination="jpW-vt-7KP" id="bHw-RU-0oT"/>
+                        <outlet property="statusBar" destination="o0r-Xq-dFp" id="W4G-PD-oz7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="114.08450704225352"/>
+        </scene>
+    </scenes>
+</document>
